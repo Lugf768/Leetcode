@@ -1,6 +1,7 @@
 package com.lgf.jzoffer.chaptertwo;
 
 
+import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -13,8 +14,8 @@ import java.util.Set;
 public class Q3 {
 
     public static void main(String[] args) {
-        int[] nums ={2, 1, 1, 0, 2, 5, 3};
-        int i = repeat2(nums);
+        int[] nums ={2,3,5,4,3,2,6,7};
+        int i = repeat4(nums);
         System.out.println(i);
     }
 
@@ -80,5 +81,30 @@ public class Q3 {
             }
         }
         return -1;
+    }
+
+    // 题目二：在一个长度为n+1的数组里的数字都在1-n的范围内，找出任意一个重复的数字，
+    // 不修改数组找出重复的数字时间复杂度：O(N)，二分法的时间复杂度为 O(logN)，
+    // 在二分法的内部，执行了一次 for 循环，时间复杂度为O(N)，故时间复杂度为O(NlogN)。
+    // 空间复杂度O(1)，使用了一个 cnt 变量，因此空间复杂度为O(1)。
+    public static int repeat4(int[] nums){
+
+        int start=1;
+        int end=nums.length-1;
+        while(start < end){
+            int middle=(start+end) / 2;
+            int count = 0;
+            for (int i = 0; i < nums.length; i++){
+                if (nums[i] <= middle){
+                    count++;
+                }
+            }
+            if (count > middle){
+                end = middle;
+            }else {
+                start = middle + 1;
+            }
+        }
+        return start;
     }
 }
