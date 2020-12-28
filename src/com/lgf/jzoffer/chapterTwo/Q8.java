@@ -8,9 +8,9 @@ public class Q8 {
 
     public class TreeLinkNode {
         int val;
-        TreeLinkNode left = null;
-        TreeLinkNode right = null;
-        TreeLinkNode next = null;
+        TreeLinkNode left = null;//左子节点
+        TreeLinkNode right = null;//右子节点
+        TreeLinkNode next = null; //指向父节点
         TreeLinkNode(int val) {
             this.val = val;
         }
