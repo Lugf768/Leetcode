@@ -1,4 +1,4 @@
-package com.lgf.jzoffer.chaptertwo;
+package com.lgf.jzoffer.chapterTwo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
