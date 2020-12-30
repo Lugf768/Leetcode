@@ -6,7 +6,7 @@ package com.lgf.jzoffer.chapterTwo;
  * F(0) = 0,   F(1) = 1
  * F(N) = F(N - 1) + F(N - 2), 其中 N > 1.
  */
-public class Q101 {
+public class Q10_1 {
 
     //0 ,1, 1, 2, 3, 5, 8
     public int fib1(int n) {
