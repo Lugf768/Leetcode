@@ -8,7 +8,7 @@ package com.lgf.jzoffer.chapterTwo;
  */
 public class Q14_2 {
 
-    //解题思路：数学推导/贪心思想/快速幂求余
+    //解题思路：数学推导/贪心思想/循环求余
     //https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/solution/mian-shi-ti-14-ii-jian-sheng-zi-iitan-xin-er-fen-f/
     public int cuttingRope(int n) {
         if(n <= 3){
