@@ -7,6 +7,7 @@ package com.lgf.jzoffer.chapterThree;
  */
 public class Q22 {
 
+    //使用双指针则可以不用统计链表长度。
     public ListNode getKthFromEnd(ListNode head, int k) {
         ListNode former = head, latter = head;
         for(int i = 0; i < k; i++) {
