@@ -9,6 +9,10 @@ import java.util.Set;
  */
 public class Q61 {
 
+    //根据题意，此5张牌是顺子的 充分条件 如下：
+    //除大小王外，所有牌无重复 ；
+    //设此5张牌中最大的牌为 max ，最小的牌为 min（大小王除外），则需满足：max−min<5
+    //https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/solution/mian-shi-ti-61-bu-ke-pai-zhong-de-shun-zi-ji-he-se/
     public boolean isStraight(int[] nums) {
         Set<Integer> repeat = new HashSet<>();
         int max = 0, min = 14;
